@@ -75,3 +75,6 @@ set t_Co=256              " Set colors to 256
 set wildmenu              " Command-line completion operates in an enhanced mode
 
 syntax enable             " Turn on syntax highlighting
+
+" Integrate with powerline fonts
+let g:airline_powerline_fonts = 1
