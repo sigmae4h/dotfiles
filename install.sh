@@ -34,7 +34,7 @@ done
 ########## Install addons
 # Bash-it
 git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
-~/.bash_it/install.sh -s -n
+~/.bash_it/install.sh -s
 
 # Vundle & vim plugins
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
@@ -42,3 +42,6 @@ vim +PluginInstall +qal
 
 # Npm global dir
 mkdir ~/.npm-packages
+
+# Enable pairs for bash-it
+printf "\n# Enable pairs for bash-it\nexport SCM_GIT_SHOW_CURRENT_USER=true" >> ~/.bash_profile
