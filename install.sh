@@ -33,15 +33,27 @@ done
 
 ########## Install addons
 # Bash-it
-git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
-~/.bash_it/install.sh -s
+if [ ! -d "~/.bash_it" ]; then
+    echo "Installing Bash-it"
+    git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
+    ~/.bash_it/install.sh -s
+fi
 
 # Vundle & vim plugins
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-vim +PluginInstall +qal
+if [ ! -d "~/.vim" ]; then
+    echo "Installing Vundle"
+    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+    vim +PluginInstall +qal
+fi
 
 # Npm global dir
-mkdir ~/.npm-packages
+if [ ! -d "~/.npm-packages" ]; then
+    echo "Redirecting Npm's globals"
+    mkdir ~/.npm-packages
+fi
 
 # Enable pairs for bash-it
-printf "\n# Enable pairs for bash-it\nexport SCM_GIT_SHOW_CURRENT_USER=true" >> ~/.bash_profile
+if [ ! -d "~/.bash_it" ]; then
+    echo "Enabling pairs for bash-it"
+    printf "\n# Enable pairs for bash-it\nexport SCM_GIT_SHOW_CURRENT_USER=true" >> ~/.bash_profile
+fi
