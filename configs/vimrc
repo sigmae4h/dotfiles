@@ -54,12 +54,16 @@ set nocompatible          " Turn off vi compatibility
 filetype indent on        " Enable file type detection
 
 set autoindent            " Copy indent from current line when starting a new line
+set colorcolumn=80        " Show a colored bar at 80 characters
 set complete=.,w,b,u,t,i  " Keyword completion options
 set expandtab             " Use spaces instead of tabs
 "set foldmethod=indent     " Enable line folding
 set ignorecase            " Ignore case in search patterns
 set incsearch             " Highlight search patterns
 set laststatus=2          " Last window always has a statusline
+set list                  " Show whitespace characters
+set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
+                          " Strings to use in list mode
 set nohlsearch            " Stop highlighting after search
 set nowrap                " Turn off line wrapping
 set number                " Turn on line numbering
