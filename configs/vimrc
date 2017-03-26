@@ -33,6 +33,7 @@ Plugin 'vim-airline/vim-airline-themes'
 "Plugin 'vim-syntastic/syntastic'
 Plugin 'tpope/vim-fugitive'
 Plugin 'Raimondi/delimitMate'
+Plugin 'leafgarland/typescript-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -54,6 +55,8 @@ set nocompatible          " Turn off vi compatibility
 filetype indent on        " Enable file type detection
 
 set autoindent            " Copy indent from current line when starting a new line
+set autoread              " Reload files on external changes
+set autowriteall          " Save on buffer switch
 set colorcolumn=80        " Show a colored bar at 80 characters
 set complete=.,w,b,u,t,i,kspell
                           " Keyword completion options
@@ -84,3 +87,6 @@ syntax enable             " Turn on syntax highlighting
 
 " Integrate with powerline fonts
 let g:airline_powerline_fonts = 1
+
+" Enable html auto tag completion
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
