@@ -90,3 +90,6 @@ let g:airline_powerline_fonts = 1
 
 " Enable html auto tag completion
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+
+" Save on loss of focus
+au FocusLost * silent! wa
