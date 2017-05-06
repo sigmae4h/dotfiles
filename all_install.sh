@@ -1,6 +1,6 @@
 #!/bin/bash
 ############################
-# .base_install.sh
+# .all_install.sh
 # This script installs all configs
 ############################
 
