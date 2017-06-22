@@ -17,3 +17,5 @@ mv ~/dotfiles_old/* ~/
 # Remove remaining directories
 echo "Removing remaining files"
 rm -rf ~/dot*
+
+cd ~
