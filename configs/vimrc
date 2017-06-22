@@ -34,6 +34,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
 Plugin 'Raimondi/delimitMate'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'altercation/vim-colors-solarized'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -57,6 +58,7 @@ filetype indent on        " Enable file type detection
 set autoindent            " Copy indent from current line when starting a new line
 set autoread              " Reload files on external changes
 set autowriteall          " Save on buffer switch
+set background=dark       " Enable dark background for solarized plugin
 set colorcolumn=80        " Show a colored bar at 80 characters
 set complete=.,w,b,u,t,i,kspell
                           " Keyword completion options
@@ -65,14 +67,14 @@ set expandtab             " Use spaces instead of tabs
 set ignorecase            " Ignore case in search patterns
 set incsearch             " Highlight search patterns
 set laststatus=2          " Last window always has a statusline
-set list                  " Show whitespace characters
+"set list                  " Show whitespace characters
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
                           " Strings to use in list mode
 set nohlsearch            " Stop highlighting after search
 set nowrap                " Turn off line wrapping
 set number                " Turn on line numbering
 set path+=**              " Define search paths
-set relativenumber        " Shows line number relative to the cursor
+"set relativenumber        " Shows line number relative to the cursor
 set ruler                 " Show line information
 set shiftround            " Use shiftwidths for indenting
 set shiftwidth=4          " Number of spaces to use for each tab
@@ -86,10 +88,14 @@ set wildmenu              " Command-line completion operates in an enhanced mode
 syntax enable             " Turn on syntax highlighting
 
 " Integrate with powerline fonts
-let g:airline_powerline_fonts = 1
+"let g:airline_powerline_fonts = 1
 
 " Enable html auto tag completion
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 
 " Save on loss of focus
 au FocusLost * silent! wa
+
+" Enable solarized Plugin 'vim-colors-solarized'
+let g:solarized_termcolors=256
+colorscheme solarized
