@@ -1,7 +1,7 @@
 #!/bin/bash
 ############################
-# .all_install.sh
-# This script installs all configs
+# .core_install.sh
+# This script installs main configs
 ############################
 
 cd ~/dotfiles
@@ -9,6 +9,6 @@ cd ~/dotfiles
 /bin/bash base_install.sh
 
 ########## Install addons
-/bin/bash core_install.sh
-/bin/bash npm_install.sh
-/bin/bash android_install.sh
+/bin/bash bash-it_install.sh
+/bin/bash vim_install.sh
+/bin/bash tmux_install.sh
