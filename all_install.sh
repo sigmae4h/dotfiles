@@ -11,5 +11,6 @@ cd ~/dotfiles
 ########## Install addons
 /bin/bash bash-it_install.sh
 /bin/bash vim_install.sh
+/bin/bash tmux_install.sh
 /bin/bash npm_install.sh
 /bin/bash android_install.sh
