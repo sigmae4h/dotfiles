@@ -27,15 +27,16 @@ Plugin 'VundleVim/Vundle.vim'
 " different version somewhere else.
 " Plugin 'ascenator/L9', {'name': 'newL9'}
 
-Plugin 'scrooloose/nerdtree'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
 "Plugin 'vim-syntastic/syntastic'
-Plugin 'tpope/vim-fugitive'
 Plugin 'Raimondi/delimitMate'
-Plugin 'leafgarland/typescript-vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'kshenoy/vim-signature'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-surround'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -81,12 +82,15 @@ set path+=**              " Define search paths
 set ruler                 " Show line information
 set shiftround            " Use shiftwidths for indenting
 set shiftwidth=4          " Number of spaces to use for each tab
+"set showcmd               " Shows vim commands are they are typed
 set smarttab              " Use spaces instead of tabs
 set softtabstop=4         " Number of spaces that a <Tab> counts for
+"set spell                 " Enables spellchecking
 set tabstop=4             " Number of spaces that a <Tab> in the file counts for
 set tags=~/.tags          " Filenames for the tag command
 set t_Co=256              " Set colors to 256
 set wildmenu              " Command-line completion operates in an enhanced mode
+set wrap                  " Enable word wrapping
 
 syntax enable             " Turn on syntax highlighting
 
