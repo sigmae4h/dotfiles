@@ -8,7 +8,7 @@
 ########## Variables
 dir=~/dotfiles/configs                              # dotfiles directory
 olddir=~/dotfiles_old                               # old dotfiles backup directory
-files="minttyrc tmux.conf vimrc bash_profile"   # list of files/folders to symlink in homedir
+files="minttyrc tmux.conf vimrc"   # list of files/folders to symlink in homedir
 ##########
 
 # create dotfiles_old in homedir
@@ -30,3 +30,7 @@ for file in $files; do
 	echo "Creating symlink to $file in home directory."
 	ln -s $dir/$file ~/.$file
 done
+
+# create bashrc and symlink bash_profile to it
+touch ~/.bashrc
+ln -s ~/.bashrc ~/.bash_profile
