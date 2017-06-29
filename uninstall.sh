@@ -14,7 +14,3 @@ rm -rf ~/.bash* ~/.vim* ~/.npm-packages ~/.tmux* ~/.npmrc ~/.minttyrc
 echo "Restoring old dotfiles"
 mv ~/dotfiles_old/* ~/
 rm -rf ~/dotfiles_old
-
-# Remove remaining directories
-echo "Removing remaining files"
-rm -rf ~/dot*
