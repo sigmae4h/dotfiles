@@ -1,6 +1,6 @@
 #!/bin/bash
 ############################
-# .core_install.sh
+# .main_install.sh
 # This script installs main configs
 ############################
 

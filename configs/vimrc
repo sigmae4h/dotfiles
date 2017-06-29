@@ -30,6 +30,7 @@ Plugin 'VundleVim/Vundle.vim'
 "Plugin 'vim-syntastic/syntastic'
 Plugin 'Raimondi/delimitMate'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'edkolev/tmuxline.vim'
 Plugin 'kshenoy/vim-signature'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'scrooloose/nerdtree'
@@ -95,7 +96,10 @@ set wrap                  " Enable word wrapping
 syntax enable             " Turn on syntax highlighting
 
 " Integrate with powerline fonts
-"let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 1
+
+" Turn off separators for tmuxline
+"let g:tmuxline_powerline_separators = 0
 
 " Enable html auto tag completion
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
