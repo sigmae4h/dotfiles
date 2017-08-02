@@ -106,9 +106,6 @@ let g:airline_powerline_fonts = 1
 " Enable html auto tag completion
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 
-" Save on loss of focus
-au FocusLost * silent! wa
-
 " Enable solarized Plugin 'vim-colors-solarized'
 let g:solarized_termcolors=256
 let g:solarized_termtrans=1
