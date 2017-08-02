@@ -1,4 +1,8 @@
 #!/bin/bash
+############################
+# .uninstall.sh
+# This script uninstalls all dotfiles
+############################
 
 cd ~
 
