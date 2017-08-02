@@ -1,4 +1,8 @@
 #!/bin/bash
+############################
+# .purge.sh
+# This script uninstalls all dotfiles and deletes the repo
+############################
 
 cd ~
 
