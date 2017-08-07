@@ -36,6 +36,7 @@ Plugin 'edkolev/tmuxline.vim'
 Plugin 'kshenoy/vim-signature'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'tmux-plugins/vim-tmux-focus-events'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'vim-airline/vim-airline'
@@ -105,6 +106,9 @@ let g:airline_powerline_fonts = 1
 
 " Enable html auto tag completion
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+
+" Trigger autoread when changing buffers inside VIM
+au FocusGained,BufEnter * :checktime
 
 " Enable solarized Plugin 'vim-colors-solarized'
 let g:solarized_termcolors=256
