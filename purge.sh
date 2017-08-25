@@ -6,7 +6,7 @@
 
 cd ~
 
-# Uninstall 
+# Uninstall
 ~/dotfiles/uninstall.sh
 
 # Remove remaining directories
