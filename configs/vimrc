@@ -27,6 +27,10 @@ Plugin 'VundleVim/Vundle.vim'
 " different version somewhere else.
 " Plugin 'ascenator/L9', {'name': 'newL9'}
 
+"Plugin 'kshenoy/vim-signature'
+"Plugin 'leafgarland/typescript-vim'
+"Plugin 'tpope/vim-fugitive'
+"Plugin 'tpope/vim-surround'
 "Plugin 'vim-syntastic/syntastic'
 Plugin 'Raimondi/delimitMate'
 Plugin 'Valloric/YouCompleteMe'
@@ -35,13 +39,9 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'janko-m/vim-test'
-Plugin 'kshenoy/vim-signature'
-Plugin 'leafgarland/typescript-vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tmux-plugins/vim-tmux-focus-events'
 Plugin 'tpope/vim-dispatch'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-surround'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
@@ -101,25 +101,23 @@ set wrap                  " Enable word wrapping
 
 syntax enable             " Turn on syntax highlighting
 
-" Integrate with powerline fonts
-let g:airline_powerline_fonts = 1
-
-" Turn off separators for tmuxline
-"let g:tmuxline_powerline_separators = 0
-
-" Enable html auto tag completion
-autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
-
 " Trigger autoread when changing buffers inside VIM
 au FocusGained,BufEnter * :checktime
 
 " Save all buffers when focus is lost
 autocmd BufLeave,FocusLost,VimResized * silent! wall
 
-" Make vim-test commands execute using dispatch.vim
+" Integrate with powerline fonts
+let g:airline_powerline_fonts = 1
+
+" Turn off separators for tmuxline plugin
+"let g:tmuxline_powerline_separators = 0
+
+" Make vim-test plugin commands execute using dispatch.vim
 let test#strategy = "dispatch"
 
-" Enable solarized Plugin 'vim-colors-solarized'
+" Enable vim-colors-solarized plugin
 let g:solarized_termcolors=256
 let g:solarized_termtrans=1
 colorscheme solarized
+
