@@ -12,7 +12,7 @@ echo "Uninstalling bash-it"
 
 # Remove symlinks and created directories
 echo "Removing symlinks and created directories"
-rm -rf ~/.bash* ~/.vim* ~/.npm-packages ~/.tmux* ~/.npmrc ~/.minttyrc ~/.gitconfig
+rm -rf ~/.bash* ~/.vim* ~/.npm-packages ~/.tmux* ~/.npmrc ~/.minttyrc ~/.gitconfig ~/.tern-project
 
 # Restore old dotfiles
 echo "Restoring old dotfiles"

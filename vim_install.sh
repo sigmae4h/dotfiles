@@ -9,4 +9,12 @@ if [ ! -d "~/.vim" ]; then
     echo "Installing Vundle"
     git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
     vim -E -u NONE -S ~/dotfiles/configs/vimrc +PluginInstall +qall
+
+    # Install YouCompleteMe
+    if [[ $(command cmake) ]]; then
+        cd ~/.vim/bundle/YouCompleteMe 
+        ./install.py
+    else
+        echo "------ CMake is missing: Unable to install YouCompleteMe"
+    fi
 fi
