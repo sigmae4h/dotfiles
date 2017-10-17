@@ -114,7 +114,17 @@ let g:airline_powerline_fonts = 1
 "let g:tmuxline_powerline_separators = 0
 
 " Make vim-test plugin commands execute using dispatch.vim
-let test#strategy = "dispatch"
+"let test#strategy = "dispatch"
+
+" Autoclose vim-test preview widow after selection is made
+let g:ycm_autoclose_preview_window_after_completion = 1
+
+" Configure vim-test shortcuts
+nmap <silent> <leader>t :TestNearest<CR>
+nmap <silent> <leader>T :TestFile<CR>
+nmap <silent> <leader>a :TestSuite<CR>
+nmap <silent> <leader>l :TestLast<CR>
+nmap <silent> <leader>g :TestVisit<CR>
 
 " Enable vim-colors-solarized plugin
 let g:solarized_termcolors=256
