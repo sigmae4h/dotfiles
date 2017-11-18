@@ -11,9 +11,9 @@ if [ ! -d "~/.vim" ]; then
     vim -E -u NONE -S ~/dotfiles/configs/vimrc +PluginInstall +qall
 
     # Install YouCompleteMe
-    if [[ $(command cmake) ]]; then
-        cd ~/.vim/bundle/YouCompleteMe 
-        ./install.py
+    if [[ $(command cmake) ]] && [[ ! -d "~/.vim/bundle/YouCompleteMe" ]]; then
+        cd ~/.vim/bundle/YouCompleteMe
+        ./install.py --all
     else
         echo "------ CMake is missing: Unable to install YouCompleteMe"
     fi

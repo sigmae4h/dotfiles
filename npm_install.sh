@@ -38,11 +38,3 @@ for file in $files; do
     echo "Creating symlink to $file in home directory."
     ln -s $dir/$file ~/.$file
 done
-
-# Install YouCompleteMe
-if [[ $(command cmake) ]]; then
-    cd ~/.vim/bundle/YouCompleteMe 
-    ./install.py --tern-completer
-else
-    echo "------ CMake is missing: Unable to install YouCompleteMe"
-fi
