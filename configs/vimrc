@@ -37,6 +37,7 @@ Plugin 'editorconfig/editorconfig-vim'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'janko-m/vim-test'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'pangloss/vim-javascript'
 Plugin 'scrooloose/nerdtree'
 Plugin 'severin-lemaignan/vim-minimap'
 Plugin 'tmux-plugins/vim-tmux-focus-events'
@@ -113,6 +114,9 @@ let NERDTreeShowHidden=1
 
 " Integrate with powerline fonts
 let g:airline_powerline_fonts = 1
+
+" Set delimitMate to expand carriage returns
+let delimitMate_expand_cr=1
 
 " Turn off separators for tmuxline plugin
 "let g:tmuxline_powerline_separators = 0
