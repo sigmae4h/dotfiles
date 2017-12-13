@@ -27,16 +27,19 @@ Plugin 'VundleVim/Vundle.vim'
 " different version somewhere else.
 " Plugin 'ascenator/L9', {'name': 'newL9'}
 
+"Plugin 'Valloric/YouCompleteMe'
 "Plugin 'kshenoy/vim-signature'
 "Plugin 'tpope/vim-surround'
 Plugin 'Raimondi/delimitMate'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'edkolev/tmuxline.vim'
+Plugin 'idanarye/vim-vebugger'
 Plugin 'janko-m/vim-test'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'ludovicchabant/vim-gutentags'
 Plugin 'pangloss/vim-javascript'
 Plugin 'scrooloose/nerdtree'
 Plugin 'severin-lemaignan/vim-minimap'
@@ -45,6 +48,7 @@ Plugin 'tpope/vim-dispatch'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'vim-scripts/AutoComplPop'
 Plugin 'vim-syntastic/syntastic'
 
 " All of your Plugins must be added before the following line
@@ -96,7 +100,7 @@ set smarttab              " Use spaces instead of tabs
 set softtabstop=4         " Number of spaces that a <Tab> counts for
 "set spell                 " Enables spellchecking
 set tabstop=4             " Number of spaces that a <Tab> in the file counts for
-"set tags=~/.tags          " Filenames for the tag command
+set tags=tags;/           " Filenames for the tag command
 set t_Co=256              " Set colors to 256
 set wildmenu              " Command-line completion operates in an enhanced mode
 set wrap                  " Enable word wrapping
