@@ -11,7 +11,7 @@ if [ ! -d "~/.vim" ]; then
     vim -E -u NONE -S ~/dotfiles/configs/vimrc +PluginInstall +qall
 
     # Install YouCompleteMe
-    if [[ $(command cmake) ]] && [[ ! -d "~/.vim/bundle/YouCompleteMe" ]]; then
+    if [[ $(command cmake) ]] && [[ -d "~/.vim/bundle/YouCompleteMe" ]]; then
         cd ~/.vim/bundle/YouCompleteMe
         ./install.py --all
     else
