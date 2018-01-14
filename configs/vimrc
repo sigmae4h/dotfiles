@@ -27,9 +27,8 @@ Plugin 'VundleVim/Vundle.vim'
 " different version somewhere else.
 " Plugin 'ascenator/L9', {'name': 'newL9'}
 
-"Plugin 'Valloric/YouCompleteMe'
-"Plugin 'kshenoy/vim-signature'
-"Plugin 'tpope/vim-surround'
+" Plugin 'Valloric/YouCompleteMe'
+" Plugin 'kshenoy/vim-signature'
 Plugin 'Raimondi/delimitMate'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'altercation/vim-colors-solarized'
@@ -44,8 +43,10 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'scrooloose/nerdtree'
 Plugin 'severin-lemaignan/vim-minimap'
 Plugin 'tmux-plugins/vim-tmux-focus-events'
+Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-dispatch'
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-surround'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-scripts/AutoComplPop'
@@ -91,7 +92,7 @@ set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 set nowrap                " Turn off line wrapping
 set number                " Turn on line numbering
 set path+=**              " Define search paths
-"set relativenumber        " Shows line number relative to the cursor
+set relativenumber        " Shows line number relative to the cursor
 set ruler                 " Show line information
 set shiftround            " Use shiftwidths for indenting
 set shiftwidth=4          " Number of spaces to use for each tab
