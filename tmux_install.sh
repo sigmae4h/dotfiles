@@ -5,7 +5,7 @@
 ############################
 
 # Tmux & plugins
-if [ ! -d "~/.tmux/plugins/tpm" ]; then
+if [ ! -d "${HOME}/.tmux/plugins/tpm" ]; then
     echo "Adding tmux alias"
-    printf '\n# Tmux alias\nalias tmux="tmux -2"\n' >> ~/.bashrc
+    printf '\n# Tmux alias\nalias tmux="tmux -2"\n' >> ${HOME}/.bashrc
 fi

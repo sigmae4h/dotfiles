@@ -4,7 +4,7 @@
 # This script installs all configs
 ############################
 
-cd ~/dotfiles
+cd ${HOME}/dotfiles
 
 /bin/bash base_install.sh
 
