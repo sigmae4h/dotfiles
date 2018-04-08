@@ -28,6 +28,10 @@ Plugin 'VundleVim/Vundle.vim'
 " Plugin 'ascenator/L9', {'name': 'newL9'}
 
 " Plugin 'Valloric/YouCompleteMe'
+Plugin 'majutsushi/tagbar'
+Plugin 'ryanoasis/vim-devicons'
+Plugin 'burnettk/vim-angular'
+
 Plugin 'Raimondi/delimitMate'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'altercation/vim-colors-solarized'
