@@ -3,3 +3,4 @@
 	email = sigma.e4h@gmail.com
 [core]
 	editor = vim
+	excludesfile = /home/sigma/.gitignore_global

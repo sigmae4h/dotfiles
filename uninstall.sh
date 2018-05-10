@@ -12,7 +12,7 @@ ${HOME}/.bash_it/uninstall.sh -s
 
 # Remove symlinks and created directories
 echo "Removing symlinks and created directories"
-rm -rf ${HOME}/.bash* ${HOME}/.vim* ${HOME}/.npm-packages ${HOME}/.tmux* ${HOME}/.npmrc ${HOME}/.minttyrc ${HOME}/.gitconfig ${HOME}/.tern-project
+rm -rf ${HOME}/.bash* ${HOME}/.vim* ${HOME}/.npm-packages ${HOME}/.tmux* ${HOME}/.npmrc ${HOME}/.minttyrc ${HOME}/.git* ${HOME}/.tern-project
 
 # Restore old dotfiles
 echo "Restoring old dotfiles"

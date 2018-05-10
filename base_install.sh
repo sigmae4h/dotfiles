@@ -8,7 +8,8 @@
 ########## Variables
 dir=${HOME}/dotfiles/configs                                    # dotfiles directory
 olddir=${HOME}/dotfiles_old                                     # old dotfiles backup directory
-files="minttyrc tmux.conf vimrc gitconfig tern-project ctags"         # list of files/folders to symlink in homedir
+files="minttyrc tmux.conf vimrc gitconfig tern-project ctags gitignore_global"
+                                                                # list of files/folders to symlink in homedir
 ##########
 
 # create dotfiles_old in homedir
