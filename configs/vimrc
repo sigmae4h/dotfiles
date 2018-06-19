@@ -29,8 +29,8 @@ Plugin 'VundleVim/Vundle.vim'
 
 " Plugin 'Valloric/YouCompleteMe'
 Plugin 'majutsushi/tagbar'
-Plugin 'ryanoasis/vim-devicons'
 Plugin 'burnettk/vim-angular'
+Plugin 'artur-shaik/vim-javacomplete2'
 
 Plugin 'Raimondi/delimitMate'
 Plugin 'airblade/vim-gitgutter'
@@ -158,3 +158,5 @@ if !exists("g:ycm_semantic_triggers")
 endif
 let g:ycm_semantic_triggers['typescript'] = ['.']
 
+" Javacomplete2 config
+autocmd FileType java setlocal omnifunc=javacomplete#Complete
