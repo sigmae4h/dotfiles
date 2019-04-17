@@ -170,4 +170,4 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 " Syntastic for python
-let g:syntastic_python_checkoers = ['pylint']
+let g:syntastic_python_checkers = ['pylint']
