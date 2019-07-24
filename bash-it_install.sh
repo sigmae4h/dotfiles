@@ -11,4 +11,6 @@ if [ ! -d "${HOME}/.bash_it" ]; then
     ${HOME}/.bash_it/install.sh -s
     echo "Adding config for pairs"
     printf '\n# Enable pairs for bash-it\nexport SCM_GIT_SHOW_CURRENT_USER=true\n' >> ${HOME}/.bashrc
+    echo "Adding vi editing mode"
+    printf '\n# Set vi editing mode\nset -o vi\n' >> ${HOME}/.bashrc
 fi
