@@ -97,7 +97,7 @@ set laststatus=2          " Last window always has a statusline
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
                           " Strings to use in list mode
 set nowrap                " Turn off line wrapping
-set mouse=a               " Turn on mouse interactions
+" set mouse=a               " Turn on mouse interactions
 set number                " Turn on line numbering
 set path+=**              " Define search paths
 set relativenumber        " Shows line number relative to the cursor
