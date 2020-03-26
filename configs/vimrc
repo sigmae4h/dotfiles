@@ -108,6 +108,8 @@ set shiftwidth=4          " Number of spaces to use for each tab
 set smarttab              " Use spaces instead of tabs
 set softtabstop=4         " Number of spaces that a <Tab> counts for
 "set spell                 " Enables spellchecking
+set splitbelow            " Open splits below current
+set splitright            " Open vsplits right of current
 set tabstop=4             " Number of spaces that a <Tab> in the file counts for
 set tags=tags;/           " Filenames for the tag command
 set t_Co=256              " Set colors to 256
@@ -126,10 +128,10 @@ autocmd BufLeave,FocusLost,VimResized * silent! wall
 let NERDTreeShowHidden=1
 
 " Integrate with powerline fonts
-let g:airline_powerline_fonts = 1
+" let g:airline_powerline_fonts = 1
 
 " Turn off separators for tmuxline plugin
-"let g:tmuxline_powerline_separators = 0
+let g:tmuxline_powerline_separators = 0
 
 " Set delimitMate to expand carriage returns
 let delimitMate_expand_cr=1
