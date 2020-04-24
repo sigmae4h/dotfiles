@@ -8,7 +8,7 @@
 ########## Variables
 dir=${HOME}/dotfiles/configs                                    # dotfiles directory
 olddir=${HOME}/dotfiles_old                                     # old dotfiles backup directory
-files="minttyrc tmux.conf vimrc gitconfig tern-project ctags gitignore_global"
+files="zshrc minttyrc tmux.conf vimrc gitconfig tern-project ctags gitignore_global"
                                                                 # list of files/folders to symlink in homedir
 ##########
 
@@ -35,3 +35,6 @@ done
 # create bashrc and symlink bash_profile to it
 touch ${HOME}/.bashrc
 ln -s ${HOME}/.bashrc ${HOME}/.bash_profile
+
+# Install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
