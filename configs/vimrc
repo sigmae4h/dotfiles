@@ -80,13 +80,13 @@ filetype indent on        " Enable file type detection
 set autoindent            " Copy indent from current line when starting a new line
 set autoread              " Reload files on external changes
 set autowriteall          " Save on buffer switch
-set background=dark       " Enable dark background for solarized plugin
+set background=light       " Enable dark background for solarized plugin
 set backspace=indent,eol,start
                           " Set backspace behavior
 set colorcolumn=80        " Show a colored bar at 80 characters
 set complete=.,w,b,u,t,i,kspell
                           " Keyword completion options
-set clipboard=unnamed     " Use system clipboard
+set clipboard=unnamedplus     " Use system clipboard
 set expandtab             " Use spaces instead of tabs
 "set foldmethod=indent     " Enable line folding
 set hlsearch              " Highlight all search hits
@@ -128,10 +128,10 @@ autocmd BufLeave,FocusLost,VimResized * silent! wall
 let NERDTreeShowHidden=1
 
 " Integrate with powerline fonts
-" let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 1
 
 " Turn off separators for tmuxline plugin
-let g:tmuxline_powerline_separators = 0
+" let g:tmuxline_powerline_separators = 0
 
 " Set delimitMate to expand carriage returns
 let delimitMate_expand_cr=1
