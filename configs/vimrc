@@ -81,7 +81,7 @@ filetype indent on        " Enable file type detection
 set autoindent            " Copy indent from current line when starting a new line
 set autoread              " Reload files on external changes
 set autowriteall          " Save on buffer switch
-set background=light       " Enable dark background for solarized plugin
+set background=dark       " Enable dark background for solarized plugin
 set backspace=indent,eol,start
                           " Set backspace behavior
 set colorcolumn=80        " Show a colored bar at 80 characters
@@ -152,6 +152,10 @@ nmap <silent> <leader>T :TestFile<CR>
 nmap <silent> <leader>a :TestSuite<CR>
 nmap <silent> <leader>l :TestLast<CR>
 nmap <silent> <leader>g :TestVisit<CR>
+
+" Vim-test runners available are 'pytest', 'nose', 'nose2', 'djangotest', 'djangonose', 'mamba', and Python's built-in unittest as 'pyunit'
+let test#python#runner = 'pytest'
+let test#python#pytest#options = '-v'
 
 " Enable vim-colors-solarized plugin
 let g:solarized_termcolors=256
